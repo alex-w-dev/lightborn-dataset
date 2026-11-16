@@ -15,8 +15,7 @@
     "lint": "pnpm -r --if-present lint",
     "dataset:search": "node scripts/dataset-search.mjs",
     "s3:backup": "node scripts/s3-backup.mjs",
-    "s3:migrate-asset-paths": "node scripts/migrate-s3-asset-paths.mjs",
-    "deploy": "pwsh -File scripts/vm/deploy.ps1"
+    "s3:migrate-asset-paths": "node scripts/migrate-s3-asset-paths.mjs"
   },
   "engines": {
     "node": ">=20.19.0",

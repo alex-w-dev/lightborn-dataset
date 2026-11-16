@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "dataset-assets": {
+      "command": "C:\\Programs\\nodejs\\node.exe",
+      "args": [
+        "D:\\code\\lightborn-dataset\\packages\\dataset-mcp\\src\\index.mjs"
+      ],
+      "cwd": "D:\\code\\lightborn-dataset\\packages\\dataset-mcp"
+    }
+  }
+}

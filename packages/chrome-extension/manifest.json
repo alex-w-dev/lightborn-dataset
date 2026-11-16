@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "L-Fight Admin Autofill",
+  "version": "0.1.35",
+  "description": "Автогенерация ассетов админки L-Fight: Gemini локации (full-size) + иконки (copy→All-raw+512).",
+  "permissions": [
+    "tabs",
+    "storage",
+    "downloads",
+    "scripting",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*",
+    "https://*.googleusercontent.com/*",
+    "http://localhost:3005/*",
+    "http://127.0.0.1:3005/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["shared.js", "content/gemini.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "http://localhost:3005/dataset/*",
+        "http://127.0.0.1:3005/dataset/*"
+      ],
+      "js": ["shared.js", "content/admin.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "L-Fight Admin Autofill"
+  }
+}

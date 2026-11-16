@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 96" fill="none">
+  <title>Tree unit</title>
+  <!-- trunk -->
+  <rect x="28" y="72" width="8" height="20" rx="1" fill="#6B4423"/>
+  <!-- tiers -->
+  <path d="M32 4 L52 32 H12 Z" fill="#1B6B2A" stroke="#0F3D18" stroke-width="1.5"/>
+  <path d="M32 18 L56 52 H8 Z" fill="#228B22" stroke="#0F3D18" stroke-width="1.5"/>
+  <path d="M32 34 L60 74 H4 Z" fill="#2E9B35" stroke="#0F3D18" stroke-width="1.5"/>
+  <!-- highlight -->
+  <path d="M32 10 L40 28 H24 Z" fill="#3CB371" opacity="0.55"/>
+</svg>

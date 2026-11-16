@@ -1,0 +1,330 @@
+[
+  {
+    "id": "sfx_ui_click",
+    "description": "Глобальный клик по кнопкам/меню (installAudioGestures)"
+  },
+  {
+    "id": "sfx_ui_open",
+    "description": "Открытие модалки / BackAwareDialog"
+  },
+  {
+    "id": "sfx_ui_close",
+    "description": "Закрытие модалки / BackAwareDialog"
+  },
+  {
+    "id": "sfx_ui_hover",
+    "description": "Hover desktop (зарезервировано, пока не подключено)"
+  },
+  {
+    "id": "sfx_ui_error",
+    "description": "Ошибки UI: нет золота/cond/кулдаун (зарезервировано)"
+  },
+  {
+    "id": "sfx_ui_success",
+    "description": "Успешное действие UI (зарезервировано)"
+  },
+  {
+    "id": "sfx_ui_toast",
+    "description": "Тосты: трейд, пати-инвайт, travel-лут"
+  },
+  {
+    "id": "sfx_ui_tab",
+    "description": "Внутренние вкладки страниц (зарезервировано)"
+  },
+  {
+    "id": "sfx_map_teleport",
+    "description": "Телепорт по карте (MapStore)"
+  },
+  {
+    "id": "sfx_map_select",
+    "description": "Выбор маркера / точки на карте"
+  },
+  {
+    "id": "sfx_battle_start",
+    "description": "Старт боя («Атаковать» / вход в бой)"
+  },
+  {
+    "id": "sfx_farm_start",
+    "description": "Включение автофарма (MonsterCard)"
+  },
+  {
+    "id": "sfx_farm_stop",
+    "description": "Остановка автофарма (Game)"
+  },
+  {
+    "id": "sfx_battle_countdown",
+    "description": "Тик отсчёта арены (CountdownTick)"
+  },
+  {
+    "id": "sfx_battle_victory",
+    "description": "Победа в бою"
+  },
+  {
+    "id": "sfx_battle_defeat",
+    "description": "Поражение / сдача"
+  },
+  {
+    "id": "sfx_battle_death",
+    "description": "Смерть юнита в бою (FX death; 5 вариантов)"
+  },
+  {
+    "id": "sfx_battle_levelup",
+    "description": "Level-up в бою"
+  },
+  {
+    "id": "sfx_battle_loot",
+    "description": "Лут / окно дропа (в т.ч. автобой)"
+  },
+  {
+    "id": "sfx_hit",
+    "description": "Автоатака: физ. удар (не isMagicWeapon)"
+  },
+  {
+    "id": "sfx_hit_crit",
+    "description": "Крит физ. AA — слой поверх hit"
+  },
+  {
+    "id": "sfx_hit_magic",
+    "description": "Автоатака: маг. удар (isMagicWeapon)"
+  },
+  {
+    "id": "sfx_hit_magic_crit",
+    "description": "Крит маг. AA — слой поверх hit_magic"
+  },
+  {
+    "id": "sfx_hit_miss",
+    "description": "Промах; также нет стрел/болтов (SkillRejected not_enough_arrows)"
+  },
+  {
+    "id": "sfx_hit_shield",
+    "description": "Блок щитом (обычный / perfect)"
+  },
+  {
+    "id": "sfx_hit_reflect",
+    "description": "Отражение / TransferDamage"
+  },
+  {
+    "id": "sfx_dot_tick",
+    "description": "DoT-тик дебафа (EffectDamage, если activeEffect.isDebuff; toggle/баф HP-цена — без звука/цифр)"
+  },
+  {
+    "id": "sfx_cast_start_phys",
+    "description": "Старт каста физического скилла"
+  },
+  {
+    "id": "sfx_cast_start_magic",
+    "description": "Старт каста магического скилла"
+  },
+  {
+    "id": "sfx_cast_start_song",
+    "description": "Старт каста dance/song"
+  },
+  {
+    "id": "sfx_skill_hit_phys",
+    "description": "Попадание физ. скилла"
+  },
+  {
+    "id": "sfx_skill_hit_magic",
+    "description": "Попадание маг. скилла"
+  },
+  {
+    "id": "sfx_skill_heal",
+    "description": "Хил / восстановление HP"
+  },
+  {
+    "id": "sfx_skill_buff",
+    "description": "Наложение бафа"
+  },
+  {
+    "id": "sfx_skill_debuff",
+    "description": "Наложение дебафа"
+  },
+  {
+    "id": "sfx_skill_stun",
+    "description": "Стан / паралич / сон"
+  },
+  {
+    "id": "sfx_skill_toggle_on",
+    "description": "Включение toggle-скилла"
+  },
+  {
+    "id": "sfx_skill_toggle_off",
+    "description": "Выключение toggle-скилла"
+  },
+  {
+    "id": "sfx_skill_reject",
+    "description": "Отказ каста: нет MP/HP/cond (cooldown без SFX; стрелы → sfx_hit_miss; throttle ~600ms)"
+  },
+  {
+    "id": "sfx_potion_use",
+    "description": "Использование зелья (слоты potion1–5)"
+  },
+  {
+    "id": "sfx_summon",
+    "description": "Призыв саммона"
+  },
+  {
+    "id": "sfx_item_pickup",
+    "description": "Подбор предмета (travel-лут на карте)"
+  },
+  {
+    "id": "sfx_item_equip",
+    "description": "Экипировка предмета"
+  },
+  {
+    "id": "sfx_item_unequip",
+    "description": "Снятие экипировки"
+  },
+  {
+    "id": "sfx_item_move",
+    "description": "Перемещение предмета (DnD / слоты)"
+  },
+  {
+    "id": "sfx_item_destroy",
+    "description": "Уничтожение предмета"
+  },
+  {
+    "id": "sfx_gold",
+    "description": "Получение золота (карта)"
+  },
+  {
+    "id": "sfx_enchant_start",
+    "description": "Старт заточки (кнопка «Заточить»)"
+  },
+  {
+    "id": "sfx_enchant_success",
+    "description": "Успешная заточка (конец анимации)"
+  },
+  {
+    "id": "sfx_enchant_fail",
+    "description": "Провал заточки (конец анимации)"
+  },
+  {
+    "id": "sfx_energy_start",
+    "description": "Старт анергитации (кнопка «Зарядить»)"
+  },
+  {
+    "id": "sfx_energy_success",
+    "description": "Успешный анергит (конец анимации)"
+  },
+  {
+    "id": "sfx_energy_remove",
+    "description": "Снятие анергита"
+  },
+  {
+    "id": "sfx_chest_open",
+    "description": "Открытие Deluxe-сундука"
+  },
+  {
+    "id": "sfx_chest_reward",
+    "description": "Награда из Deluxe-сундука"
+  },
+  {
+    "id": "sfx_shop_buy",
+    "description": "Покупка в магазине"
+  },
+  {
+    "id": "sfx_shop_sell",
+    "description": "Продажа в магазине"
+  },
+  {
+    "id": "sfx_black_exchange",
+    "description": "Обмен на чёрном рынке"
+  },
+  {
+    "id": "sfx_craft_success",
+    "description": "Успешный крафт"
+  },
+  {
+    "id": "sfx_craft_fail",
+    "description": "Провал крафта"
+  },
+  {
+    "id": "sfx_warehouse_in",
+    "description": "Сдача на склад"
+  },
+  {
+    "id": "sfx_warehouse_out",
+    "description": "Забор со склада"
+  },
+  {
+    "id": "sfx_auction_list",
+    "description": "Выставление лота на аукцион"
+  },
+  {
+    "id": "sfx_auction_buy",
+    "description": "Покупка лота на аукционе"
+  },
+  {
+    "id": "sfx_auction_mail",
+    "description": "Получение почты аукциона"
+  },
+  {
+    "id": "sfx_trade_invite",
+    "description": "Инвайт / входящий запрос на трейд"
+  },
+  {
+    "id": "sfx_trade_lock",
+    "description": "Фиксация оффера («Готово»)"
+  },
+  {
+    "id": "sfx_trade_done",
+    "description": "Успешный обмен"
+  },
+  {
+    "id": "sfx_trade_cancel",
+    "description": "Отмена / отказ трейда"
+  },
+  {
+    "id": "sfx_skill_learn",
+    "description": "Изучение скилла"
+  },
+  {
+    "id": "sfx_skill_upgrade",
+    "description": "Апгрейд скилла / mastery"
+  },
+  {
+    "id": "sfx_quest_accept",
+    "description": "Принятие квеста у NPC"
+  },
+  {
+    "id": "sfx_quest_progress",
+    "description": "Прогресс квеста (NPC / бой)"
+  },
+  {
+    "id": "sfx_quest_complete",
+    "description": "Завершение квеста у NPC"
+  },
+  {
+    "id": "sfx_quest_abandon",
+    "description": "Отказ от квеста"
+  },
+  {
+    "id": "sfx_npc_talk_male",
+    "description": "Начало диалога с NPC (мужской sting)"
+  },
+  {
+    "id": "sfx_npc_talk_female",
+    "description": "Начало диалога с NPC (женский sting)"
+  },
+  {
+    "id": "sfx_npc_talk_none",
+    "description": "Начало диалога с объектом без пола (алтарь, сундук…)"
+  },
+  {
+    "id": "sfx_party_invite",
+    "description": "Инвайт в пати"
+  },
+  {
+    "id": "sfx_party_join",
+    "description": "Вступление в пати"
+  },
+  {
+    "id": "sfx_party_leave",
+    "description": "Выход / кик из пати"
+  },
+  {
+    "id": "sfx_chat_send",
+    "description": "Отправка сообщения в чат"
+  }
+]

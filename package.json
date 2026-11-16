@@ -1,0 +1,30 @@
+{
+  "name": "lightborn-dataset",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Lightborn asset dataset — catalogs, admin API/UI, MCP",
+  "scripts": {
+    "dev:dataset": "pnpm --filter @l-fight/dataset dev",
+    "dev:dataset-api": "cross-env PORT=3006 pnpm --filter @l-fight/dataset-api dev",
+    "dev:dataset-ui": "cross-env PORT=3005 pnpm --filter @l-fight/dataset-ui dev",
+    "dev:dataset-app": "pnpm kill-ports:dataset && concurrently -n \"dataset-api,dataset-ui\" -c \"cyan,magenta\" \"pnpm dev:dataset-api\" \"pnpm dev:dataset-ui\"",
+    "dev": "pnpm kill-ports:dataset && pnpm --filter @l-fight/dataset build && concurrently -n \"dataset,dataset-api,dataset-ui\" -c \"cyan,cyanBright,magenta\" \"pnpm dev:dataset\" \"pnpm dev:dataset-api\" \"pnpm dev:dataset-ui\"",
+    "kill-ports:dataset": "node scripts/kill-ports.mjs 3005 3006",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm --filter @l-fight/dataset build && pnpm -r --if-present typecheck",
+    "lint": "pnpm -r --if-present lint",
+    "dataset:search": "node scripts/dataset-search.mjs",
+    "s3:backup": "node scripts/s3-backup.mjs",
+    "s3:migrate-asset-paths": "node scripts/migrate-s3-asset-paths.mjs",
+    "deploy": "pwsh -File scripts/vm/deploy.ps1"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "pnpm": ">=10.27.0"
+  },
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0"
+  }
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "id":  "pve",
+        "file":  "dungeon-floor.jpg",
+        "name":  "Поле боя",
+        "description":  "Квадратный пол катакомб: треснувший камень, кости, лава в трещинах. Фон боя lightborn и рана roguelike."
+    },
+    {
+        "id":  "login",
+        "file":  "login.jpeg",
+        "name":  "Логин",
+        "description":  "Тёмный фэнтези-фон экрана входа и регистрации."
+    },
+    {
+        "id":  "lobby",
+        "file":  "lobbi.jpg",
+        "name":  "Лобби / выбор персонажа",
+        "description":  "Фон экрана выбора и смены персонажа."
+    },
+    {
+        "id":  "arena",
+        "file":  "arena.jpeg",
+        "name":  "Арена",
+        "description":  "Фон вкладки арены (PvP)."
+    },
+    {
+        "id":  "shop",
+        "file":  "shop.jpeg",
+        "name":  "Магазин",
+        "description":  "Фон магазина и аукциона."
+    },
+    {
+        "id":  "warehouse",
+        "file":  "wh.jpeg",
+        "name":  "Склад",
+        "description":  "Тёмный фон склада / инвентаря."
+    },
+    {
+        "id":  "workshop",
+        "file":  "ws.jpeg",
+        "name":  "Мастерская",
+        "description":  "Фон вкладки крафта."
+    },
+    {
+        "id":  "treasure",
+        "file":  "treasure.jpeg",
+        "name":  "Сокровищница",
+        "description":  "Фон блока открытия deluxe-сундука."
+    },
+    {
+        "id":  "roguelike-title",
+        "file":  "roguelike-title.jpg",
+        "name":  "Roguelike · титул",
+        "description":  "Катакомбы с пылающими вратами. Фон главной и meta-экрана roguelike."
+    },
+    {
+        "id":  "roguelike-defeat",
+        "file":  "roguelike-defeat.jpg",
+        "name":  "Roguelike · поражение",
+        "description":  "Павший воин и силуэт чудовища в багровом тумане. Фон экрана поражения."
+    },
+    {
+        "id":  "roguelike-victory",
+        "file":  "roguelike-victory.jpg",
+        "name":  "Roguelike · победа",
+        "description":  "Герой над поверженной бездной. Фон экрана победы."
+    }
+]

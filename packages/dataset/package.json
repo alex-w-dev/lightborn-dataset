@@ -1,0 +1,33 @@
+{
+  "name": "@l-fight/dataset",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./generated/*": "./src/generated/*"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsup --watch",
+    "migrate:asset-images": "node scripts/migrate-asset-images.mjs",
+    "import:historical-prompts": "node scripts/import-historical-prompts.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.12",
+    "tsup": "^8.5.1",
+    "typescript": "catalog:"
+  }
+}

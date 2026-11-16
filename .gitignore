@@ -1,0 +1,80 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist/
+*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment files
+.env
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Local SQLite database file
+database.sqlite
+
+# OS files
+Thumbs.db
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Local scratch / smoke artifacts
+tmp/
+
+# Полный бэкап S3-бакета
+/s3-backup/
+
+# Локальные ассеты админки (иконки, монстры, NPC) — не коммитить
+/local-assets/
+
+# Local audio generation venv / caches
+scripts/audio-gen/.venv/
+scripts/audio-gen/.cache/
+scripts/audio-gen/tmp/
+
+# Generated data (можно исключить если хотите регенерировать локально)
+# packages/client/src/data/generated/
+
+# Кеш картинок монстров
+images/monsters/icons/
+images/monsters/icons-2/
+images/monsters/previews/
+images/monsters/original/
+images/npcs/icons/
+images/npcs/icons-2/
+images/npcs/previews/
+images/npcs/original/
+
+packages/client/public/sacled
+# Working dir for npc dialog lore fix
+packages/dataset/scripts/.npc-dialog-lore-work/

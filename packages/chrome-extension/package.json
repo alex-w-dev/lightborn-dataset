@@ -1,0 +1,7 @@
+{
+  "name": "@l-fight/chrome-extension",
+  "private": true,
+  "version": "0.1.35",
+  "description": "L-Fight Admin Autofill — Chrome MV3 (Gemini: локации + иконки)",
+  "scripts": {}
+}
